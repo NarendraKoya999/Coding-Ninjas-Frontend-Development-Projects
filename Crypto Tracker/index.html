@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Tracker</h1>
+        <div class="crypto-info">
+            <label for="crypto-select">Select a cryptocurrency:</label>
+            <select id="crypto-select">
+                <option value="">Select...</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <span id="crypto-price"></span>
+        </div>
+        <div class="alert-setup">
+            <label for="alert-price">Set Alert Price:</label>
+            <input type="number" id="alert-price" placeholder="Enter alert price">
+        </div>
+        <div id="alert-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

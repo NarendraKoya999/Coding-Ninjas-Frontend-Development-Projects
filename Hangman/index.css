@@ -1,0 +1,97 @@
+.hangman-container {
+  position: relative;
+  width: 200px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 20px auto; /* Center the container horizontally */
+}
+
+.hangman {
+  position: absolute;
+  top: 50px; /* Adjust the vertical position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Head */
+.head {
+  width: 60px; /* Width of the head */
+  height: 60px; /* Height of the head */
+  border-radius: 50%; /* Circle shape */
+  background-color: #ff3333;
+  position: absolute;
+  top: 0; /* Position at the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Body */
+.body {
+  width: 10px; /* Width of the body */
+  height: 80px; /* Height of the body */
+  background-color: #ff3333;
+  position: absolute;
+  top: 60px; /* Position below the head */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Arms */
+.left-arm,
+.right-arm {
+  width: 80px; /* Width of the arms */
+  height: 10px; /* Height of the arms */
+  background-color: #ff3333;
+  position: absolute;
+}
+
+.left-arm {
+  top: 70px; /* Position at the level of the upper body */
+  left: calc(50% - 80px); /* Position to the left of the body */
+  transform: rotate(-45deg); /* Angle for the left arm */
+  transform-origin: right center; /* Rotate around the connection point */
+}
+
+.right-arm {
+  top: 70px; /* Position at the level of the upper body */
+  left: calc(50%); /* Position to the right of the body */
+  transform: rotate(45deg); /* Angle for the right arm */
+  transform-origin: left center; /* Rotate around the connection point */
+}
+
+/* Legs */
+.left-leg,
+.right-leg {
+  width: 80px; /* Width of the legs */
+  height: 10px; /* Height of the legs */
+  background-color: #ff3333;
+  position: absolute;
+}
+
+.left-leg {
+  top: 120px; /* Position below the body */
+  left: calc(50% - 80px); /* Position to the left of the body */
+  transform: rotate(-45deg); /* Angle for the left leg */
+  transform-origin: right center; /* Rotate around the connection point */
+}
+
+.right-leg {
+  top: 120px; /* Position below the body */
+  left: calc(50%); /* Position to the right of the body */
+  transform: rotate(45deg); /* Angle for the right leg */
+  transform-origin: left center; /* Rotate around the connection point */
+}
+
+.word-display {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.guesses {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  margin-right: 10px;
+}

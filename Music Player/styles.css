@@ -1,0 +1,139 @@
+/* Base Styles (for larger screens) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.audio-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.audio-img .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.audio-title {
+    margin: 10px 0;
+}
+
+.audio-singer {
+    margin: 5px 0;
+}
+
+.audio-progress {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.progress {
+    position: relative;
+    flex: 1;
+    height: 5px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    background: #2196F3;
+    width: 0;
+}
+
+.current-time, .duration {
+    margin: 0 10px;
+}
+
+.audio-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-btns .btn {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Mobile Devices (max-width: 375px) */
+@media only screen and (max-width: 375px) {
+    .audio-container {
+        padding: 10px;
+    }
+
+    .audio-img {
+        height: 150px;
+    }
+
+    .audio-btns .btn {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
+/* Tablets (min-width: 376px) and (max-width: 768px) */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    .audio-container {
+        padding: 15px;
+    }
+
+    .audio-img {
+        height: 180px;
+    }
+
+    .audio-btns .btn {
+        font-size: 22px;
+        margin: 0 8px;
+    }
+}
+
+/* Desktops (min-width: 769px) and (max-width: 1440px) */
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .audio-container {
+        padding: 20px;
+    }
+
+    .audio-img {
+        height: 200px;
+    }
+
+    .audio-btns .btn {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+}
+
+/* Large Desktops (min-width: 1441px) */
+@media only screen and (min-width: 1441px) {
+    .audio-container {
+        max-width: 1200px;
+        padding: 30px;
+    }
+
+    .audio-img {
+        height: 250px;
+    }
+
+    .audio-btns .btn {
+        font-size: 26px;
+        margin: 0 15px;
+    }
+}

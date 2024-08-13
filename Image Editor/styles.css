@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editor-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter, .rotate {
+    margin: 20px;
+}
+
+.filter .options, .rotate .options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.filter .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.preview-img {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.preview-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.reset-filter, .choose-img, .save-img {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-filter:hover, .choose-img:hover, .save-img:hover {
+    background-color: #0056b3;
+}
+
+input[type="range"] {
+    width: 100%;
+}

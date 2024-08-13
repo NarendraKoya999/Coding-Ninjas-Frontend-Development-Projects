@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(to right, #00c6ff, #0072ff); }
+    50% { background: linear-gradient(to right, #0072ff, #00c6ff); }
+    100% { background: linear-gradient(to right, #00c6ff, #0072ff); }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#name {
+    color: #0072ff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#weather-container {
+    margin-top: 20px;
+}
+
+#location-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#location-input {
+    padding: 10px;
+    border: 2px solid #0072ff;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: 2px solid #0072ff;
+    border-left: none;
+    background-color: #0072ff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#weather-data {
+    font-size: 1.2em;
+    color: #333;
+    animation: fadeInUp 1s ease-out;
+}
+ 
+#weather-data p {
+    margin: 5px 0;
+}
+
+#weather-data strong {
+    font-weight: bold;
+}
+
+#weather-data i {
+    margin-right: 5px;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#error {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    #name {
+        font-size: 1.5em;
+    }
+
+    #location-input,
+    button {
+        font-size: 14px;
+    }
+
+    #weather-data {
+        font-size: 1em;
+    }
+}

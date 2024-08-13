@@ -1,0 +1,34 @@
+/* Ensure video doesn't overlap with content */
+video {
+    width: 75%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Menu card styling */
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-item {
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .menu-item {
+      flex: 0 0 33.33%;
+    }
+  }
+  
